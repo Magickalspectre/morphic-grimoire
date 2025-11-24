@@ -21,7 +21,7 @@ body {
     flex-direction: column; 
 
     /* TEMPORARY BACKGROUND IMAGE FIX: Use a stable URL */
-    background-image: url('https://placehold.co/1920x1080/1c1c1e/000000?text=REASON MEETS RHYME');
+    background-image: url('https://github.com/Magickalspectre/morphic-grimoire/blob/main/Magick%20Gemi-Nebu.png');
     background-size: cover; 
     background-attachment: fixed; 
     background-repeat: no-repeat;
