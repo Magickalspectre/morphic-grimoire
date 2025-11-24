@@ -14,15 +14,20 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    /* DELETE THIS LINE: background-color: var(--color-dark-base); */
     color: var(--color-text-light);
     margin: 0;
     min-height: 100vh;
-    display: flex; /* Enable Flexbox for layout control */
-    flex-direction: column; /* Stack header, main, and footer vertically */
-    background-image: url('https://github.com/Magickalspectre/morphic-grimoire/blob/main/Magick%20Gemi-Nebu.png'); /* 1. Sets the image */
-    background-size: cover; /* 2. Ensures the image fills the entire screen */
-    background-attachment: fixed; /* 3. CRITICAL: Stops the image from scrolling */
-}}
+    display: flex;
+    flex-direction: column;
+
+    /* --- BACKGROUND IMAGE FIX --- */
+    background-image: url('YOUR_NEW_PERMANENT_PUBLIC_URL_HERE');
+    background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Ensure it doesn't tile */
+    background-color: var(--color-dark-base); /* Added as a fallback if the image fails */
+}
 
 /* --- NAVIGATION BAR --- */
 #navbar {
