@@ -6,7 +6,7 @@
 :root {
     --color-dark-base: #1c1c1e; /* Deep Charcoal Black */
     --color-primary: #f6d000; /* Gold/Yellow Accent */
-    --color-text-light: #c0c0c0; /* Silver Text Base */
+    --color-text-light: #000000; /* Black Text Base */
 }
 
 body {
