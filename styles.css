@@ -14,28 +14,29 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    /* DELETE THIS LINE: background-color: var(--color-dark-base); */
     color: var(--color-text-light);
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    /* DELETE THIS LINE if it exists: background-color: var(--color-dark-base); */
 
-    /* --- BACKGROUND IMAGE FIX --- */
-    background-image: url('YOUR_NEW_PERMANENT_PUBLIC_URL_HERE');
+    /* Ensure these three lines are correct and pointing to the uploaded file */
+    background-image: url('Magick Gemi-Nebu.png'); 
     background-size: cover; 
     background-attachment: fixed;
-    background-repeat: no-repeat; /* Ensure it doesn't tile */
-    background-color: var(--color-dark-base); /* Added as a fallback if the image fails */
+    background-repeat: no-repeat;
+    /* You must keep the color property in case the image fails */
+    background-color: var(--color-dark-base); 
+    
+    margin: 0;
+    min-height: 100vh;
+    display: flex; /* CRITICAL: Enables the vertical column layout */
+    flex-direction: column; 
 }
-
 /* --- NAVIGATION BAR --- */
 #navbar {
-    display: flex;
-    justify-content: space-between; /* Space out logo and links */
+    display: flex; /* CRITICAL: Enables horizontal alignment */
+    justify-content: space-between; /* Puts the logo left and links right */
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #0d0d0f; /* Slightly darker than body */
+    background-color: #0d0d0f; 
     border-bottom: 2px solid var(--color-secondary);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
