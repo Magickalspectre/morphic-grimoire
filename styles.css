@@ -1,0 +1,140 @@
+/*
+    CSS for Morphic's Personal Web Page
+    Aesthetic: Unseen Architecture (Dark, Minimalist, High-Contrast)
+    Layout: Modern Flexbox for responsiveness
+*/
+
+/* --- ROOT STYLING & FONT --- */
+:root {
+    --color-dark-base: #1c1c1e; /* Deep Charcoal Black */
+    --color-primary: #f6d000; /* Gold/Yellow (The Spark/Nebu's Eyes) */
+    --color-secondary: #5e3b97; /* Deep Royal Purple (Magick/Shadow) */
+    --color-text-light: #e0e0e0; /* Off-White for body text */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-dark-base);
+    color: var(--color-text-light);
+    margin: 0;
+    min-height: 100vh;
+    display: flex; /* Enable Flexbox for layout control */
+    flex-direction: column; /* Stack header, main, and footer vertically */
+}
+
+/* --- NAVIGATION BAR --- */
+#navbar {
+    display: flex;
+    justify-content: space-between; /* Space out logo and links */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0d0d0f; /* Slightly darker than body */
+    border-bottom: 2px solid var(--color-secondary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.nav-links a {
+    color: var(--color-text-light);
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+/* --- HEADER/HERO SECTION --- */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1rem;
+    background: var(--color-dark-base); /* Ensure it extends full width */
+    flex-grow: 1; /* Allow the hero section to fill available vertical space */
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+}
+
+.hero-content button {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.hero-content button:hover {
+    background-color: #7b58b4;
+    transform: translateY(-2px);
+}
+
+/* --- MAIN CONTENT --- */
+#main-content {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto; /* Center the content area */
+}
+
+#main-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(246, 208, 0, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+/* --- FOOTER --- */
+#footer {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-secondary);
+    margin-top: auto; /* Push the footer to the bottom */
+    border-top: 1px solid rgba(246, 208, 0, 0.1);
+}
+
+/* --- MEDIA QUERY for Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        margin-top: 0.5rem;
+    }
+    .nav-links a {
+        margin: 0 0.5rem;
+    }
+}
