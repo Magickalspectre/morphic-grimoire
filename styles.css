@@ -30,6 +30,7 @@ body {
     display: flex; /* CRITICAL: Enables the vertical column layout */
     flex-direction: column; 
 }
+
 /* --- NAVIGATION BAR --- */
 #navbar {
     display: flex; /* CRITICAL: Enables horizontal alignment */
