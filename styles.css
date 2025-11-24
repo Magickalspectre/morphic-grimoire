@@ -20,7 +20,7 @@ body {
     min-height: 100vh;
     display: flex; /* Enable Flexbox for layout control */
     flex-direction: column; /* Stack header, main, and footer vertically */
-    background-image: url('https://drive.google.com/file/d/1lzPICMsOUoi0xSoLC-b_zUwe_6HoDpfw/view?usp=sharing'); /* 1. Sets the image */
+    background-image: url('https://lh3.googleusercontent.com/gg-dl/ABS2GSmWgs4uchTSrAL2Kq7p9ehujWgPwNw9rRs-b1pStTG4Q9cbwbAaWik4Op_4FNa3K5klfTnDib0zM6uOQrSRFbQSFIXFjoMUV0PCdGlyjTXjusr9vLdXVVPNYybQRW7weVN2Me83QsJhexXJ0lPV1GNk5jPGIslM8Zyvj2IIpv2ZyIo49w=s1024-rj'); /* 1. Sets the image */
     background-size: cover; /* 2. Ensures the image fills the entire screen */
     background-attachment: fixed; /* 3. CRITICAL: Stops the image from scrolling */
 }}
