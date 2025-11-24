@@ -21,7 +21,7 @@ body {
     flex-direction: column; 
 
     /* TEMPORARY BACKGROUND IMAGE FIX: Use a stable URL */
-    background-image: url('https://placehold.co/1920x1080/1c1c1e/c0c0c0?text=REASON MEETS RHYME');
+    background-image: url('https://placehold.co/1920x1080/1c1c1e/000000?text=REASON MEETS RHYME');
     background-size: cover; 
     background-attachment: fixed; 
     background-repeat: no-repeat;
